@@ -25,6 +25,9 @@ const Auth0ProviderWithNavigate = ({ children }: Props) => {
     <Auth0Provider
       domain={domain}
       clientId={clientId}
+      // this code added after getting refresh error only 2 lines added line 29 and 30 
+      useRefreshTokens={true}
+      cacheLocation="localstorage"
       authorizationParams={{
         redirect_uri: redirectUri,
         audience,
@@ -37,5 +40,3 @@ const Auth0ProviderWithNavigate = ({ children }: Props) => {
 };
 
 export default Auth0ProviderWithNavigate;
-
-
