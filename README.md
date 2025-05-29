@@ -1,30 +1,109 @@
-# React + TypeScript + Vite
+🍽️ MERN Food Ordering App – Feature Summary
+🖥️ Landing Page
+Modern, responsive design with a hero section and city/town search form.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Includes auth links, app branding, and visually rich imagery.
 
-Currently, two official plugins are available:
+Fully responsive layout with mobile drawer menu navigation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔐 User Authentication
+Auth0 integration for secure login/signup.
 
-## Expanding the ESLint configuration
+Multiple sign-in methods:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Email & password
 
-- Configure the top-level `parserOptions` property like this:
+Google OAuth
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Features include:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Forgot password
+
+Email confirmation
+
+Post-login navbar updates with:
+
+Username display
+
+User avatar
+
+Access to user-specific routes
+
+👤 User Profile Management
+View and update personal details:
+
+Name
+
+Email
+
+Address
+
+Pre-fills checkout form with saved user info for convenience.
+
+🍴 Restaurant Management (Admin Features)
+Add and manage a restaurant as an owner.
+
+Set restaurant details and cuisines.
+
+CRUD operations for menu items.
+
+Upload restaurant images for search results visibility.
+
+🔍 Search & Discovery
+City/town-based search functionality.
+
+Results show:
+
+Number of available restaurants
+
+Best matches based on search query
+
+Filters:
+
+Cuisine type (e.g., Café)
+
+Sorting:
+
+By estimated delivery time
+
+Fully responsive results grid for all screen sizes.
+
+🏪 Restaurant Detail Page
+Detailed view of the selected restaurant.
+
+Basket/Cart functionality on the side:
+
+Add/remove items
+
+Live calculation of total price
+
+💳 Checkout & Payment
+Pre-filled delivery details from user profile.
+
+Integrated with Stripe for secure payments.
+
+Real-time cart summary with:
+
+Total amount
+
+Item breakdown
+
+Delivery fee
+
+🚚 Order Tracking
+Redirected to Order Status Page post-payment.
+
+Displays:
+
+Order summary
+
+Live status updates
+
+Real-time status sync between restaurant dashboard and customer order view.
+
+📦 Restaurant Dashboard (Order Management)
+Notifications for new orders.
+
+Option to update order status (e.g., "Out for delivery").
+
+Real-time order status push to customer interface.
